@@ -1,0 +1,23 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Free Code Camp backend development certificate timestamp microservice challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacksmith4393/timestamp-ms.git"
+  },
+  "author": "Zach Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blacksmith4393/timestamp-ms/issues"
+  },
+  "homepage": "https://github.com/blacksmith4393/timestamp-ms#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
