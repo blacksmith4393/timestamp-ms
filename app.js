@@ -4,7 +4,7 @@ const path = require('path');
 const app =  express();
 const timestamp = require('./timestamp');
 
-const port = 5000;
+app.set('port', (process.env.PORT || 5000));
 
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -16,8 +16,8 @@ app.get('/:str', (req, res) => {
   res.json(date);
 });
 
-app.listen(port, function () {
-  console.log('App listening on port '+port);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
 
 app.use(function (req, res, next) {
