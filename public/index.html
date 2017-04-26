@@ -10,16 +10,19 @@
 </head>
 
 <body>
-  
-  <h1>Zach's Timestamp Microservice</h1>
-  <ol>
-    <li>
-      <p>
-        Pass a string containing either a unix timestamp or a natural language date and the server will return both the Unix timestamp and the natural language form of that date.
-      </p>
-    </li>
-  </ol>
-  <h3>Example Usage</h3>
-  
+  <main class="container">
+    <h1>Zach's Timestamp Microservice</h1>
+
+    <p>
+      Pass a string, containing either a unix timestamp or a natural language date,<br> and the server will return both the Unix timestamp and the natural language form of that date.
+    </p>
+
+    <h3>Example Usage:</h3>
+    <code> http://localhost:5000/1450137600 </code> <br>
+    <code> http://localhost:5000/December%2015,%202015 </code>
+    <h3>Example Output:</h3>
+    <code>{ "unix": 1450137600, "natural": "Tue Dec 15 2015" }</code>
+  </main>
+
 </body>
 </html>
